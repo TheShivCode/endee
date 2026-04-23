@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteForge — AI Study Assistant</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <div class="logo">
+                <h2>NoteForge</h2>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#ask">Ask</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <h1>Turn Your Notes Into Answers</h1>
+
+            <p>
+                Upload study PDFs and instantly ask questions using semantic search.
+                Built for faster revision and deeper understanding.
+            </p>
+
+            <button id="start-btn">Start Studying</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload-section">
+
+        <div class="container">
+
+            <h2>Upload Your Study Material</h2>
+
+            <form id="upload-form">
+
+                <input
+                    type="file"
+                    id="pdf-file"
+                    name="file"
+                    accept=".pdf"
+                    required
+                >
+
+                <button type="submit">Upload PDF</button>
+
+            </form>
+
+            <div id="upload-status"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Query Section -->
+    <section id="ask" class="query-section">
+
+        <div class="container">
+
+            <h2>Ask Questions From Your Notes</h2>
+
+            <form id="query-form">
+
+                <input
+                    type="text"
+                    id="query-input"
+                    placeholder="Ask something about your notes..."
+                    required
+                >
+
+                <button type="submit">Search</button>
+
+            </form>
+
+            <div id="results"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+
+        <div class="container">
+
+            <h2>Why NoteForge?</h2>
+
+            <div class="features-grid">
+
+                <div class="feature">
+                    <h3>Semantic Search</h3>
+                    <p>
+                        Understands meaning, not just keywords.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Vector Database Powered</h3>
+                    <p>
+                        Stores knowledge efficiently for instant retrieval.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>Fast Revision</h3>
+                    <p>
+                        Extract answers from long PDFs in seconds.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                NoteForge — AI Study Assistant powered by semantic vector search
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
